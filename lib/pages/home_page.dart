@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
                   20.ph,
                   const ListTileComic(
                     image: 'assets/superman.jpg',
-                    titleComic: 'Xmen',
+                    titleComic: 'Superman',
                   ),
                   20.ph,
                   const ListTileComic(
@@ -72,7 +72,7 @@ class HomePage extends StatelessWidget {
                   20.ph,
                   const ListTileComic(
                     image: 'assets/jocker.jpg',
-                    titleComic: 'the jocker',
+                    titleComic: 'the joker',
                   ),
                   20.ph,
                   const ListTileComic(
@@ -108,7 +108,7 @@ class HomePage extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 children: [
                   const ListRowTileComic(
-                    title: 'The Jocker',
+                    title: 'The Joker',
                     image: 'assets/jocker.jpg',
                     rate: 4.5,
                     date: '10-2023',
