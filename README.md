@@ -2,6 +2,9 @@
 
 A new Flutter project.
 
+![Marvel-Comic-App](https://github.com/NabihUzcategui/Marvel-Comics-App/assets/99839506/a7ccdb13-92fc-407a-83f4-259ed6e778e1)
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
