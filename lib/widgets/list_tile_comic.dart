@@ -1,5 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+import 'package:flutter_marvel_comics_app/pages/comic_detail.dart';
 import 'package:flutter_marvel_comics_app/utils/extensions.dart';
 
 class ListTileComic extends StatelessWidget {
@@ -14,30 +15,40 @@ class ListTileComic extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          decoration: const BoxDecoration(
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black45,
-                blurRadius: 5.0,
-                offset: Offset(1, 1),
-              )
-            ],
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const ComicDetail(),
           ),
-          height: 260,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(10.0),
-            child: Image.asset(image),
+        );
+      },
+      child: Column(
+        children: [
+          Container(
+            decoration: const BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black45,
+                  blurRadius: 5.0,
+                  offset: Offset(1, 1),
+                )
+              ],
+            ),
+            height: 260,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(10.0),
+              child: Image.asset(image),
+            ),
           ),
-        ),
-        12.pv,
-        Text(
-          titleComic.toUpperCase(),
-          style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 15),
-        ),
-      ],
+          12.pv,
+          Text(
+            titleComic.toUpperCase(),
+            style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 15),
+          ),
+        ],
+      ),
     );
   }
 }

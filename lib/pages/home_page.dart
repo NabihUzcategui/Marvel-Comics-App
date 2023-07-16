@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_marvel_comics_app/utils/extensions.dart';
-import 'package:flutter_marvel_comics_app/widgets/custom:padding.dart';
+import 'package:flutter_marvel_comics_app/widgets/custom_padding.dart';
 import 'package:flutter_marvel_comics_app/widgets/list_row_tile_comic.dart';
 import 'package:flutter_marvel_comics_app/widgets/list_tile_comic.dart';
 
@@ -157,7 +157,7 @@ class HomePage extends StatelessWidget {
                   .10.pv,
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
